@@ -19,6 +19,7 @@ stage('Build image') {
   app = docker.build("jcs1910/deploy-boiler-plate/docker-react-app/simple-app/")
 }
 
+
 stage('Push image') {
   docker.withRegistry('https://registry.hub.docker.com', 'docker-hub') 
   {
