@@ -14,6 +14,7 @@ node {
      }
 }
 
+
 stage('Build image') {
   app = docker.build("jcs1910/deploy-boiler-plate/docker-react-app/simple-app/")
 }
